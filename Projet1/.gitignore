@@ -1,0 +1,21 @@
+# 🔒 Empêcher de partager les identifiants AWS
+*.pem
+*.key
+.aws/credentials
+.aws/config
+
+# 🛠 Fichiers temporaires et logs
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# 🔍 Fichiers système et caches
+*.cache
+*.pid
+*.lock
+
+# 📂 Éviter d'ajouter des fichiers de test ou personnels
+test.sh
+notes.txt
