@@ -22,43 +22,46 @@ Ce script Bash permet de télécharger les logs des builds Jenkins créés aujou
    - **`S3_BUCKET`** : Nom du bucket S3 où les logs seront téléchargés.
 
 Exemple de configuration dans le script :
+
 ```bash
 JENKINS_HOME="/var/lib/jenkins"  # Remplace avec le chemin de ton répertoire Jenkins
 S3_BUCKET="s3://ton-bucket-s3"  # Remplace avec ton nom de bucket S3
+```
+
 💻 Utilisation
 Clone ce repository :
 
-bash
-Copier
-Modifier
+```bash
 git clone https://github.com/ton-utilisateur/ton-repository.git
 cd ton-repository
+```
+
 Assure-toi que AWS CLI est installé :
 
 Vérifie l'installation avec la commande aws --version.
-
 Si non installé, suis le guide d'installation : Guide d'installation AWS CLI.
 
 Exécute le script :
 
-bash
-Copier
-Modifier
+```bash
 ./jenkins_logs_to_s3.sh
+```
+
 Le script parcourra tous les jobs Jenkins et les builds créés aujourd'hui, puis téléchargera les logs dans le bucket S3 spécifié.
 
 Exemple d'exécution
 Si le script fonctionne correctement, tu verras un message pour chaque log téléchargé :
 
-bash
-Copier
-Modifier
+```bash
 Uploaded: job1/42 to s3://ton-bucket-s3/job1-42.log
+```
+
 En cas d'échec, tu verras un message d'erreur :
 
-css
-Copier
-Modifier
+```bash
 Failed to upload: job1/42
+```
+
 ⚠️ Sécurité
 Veille à ce que les logs Jenkins que tu sauvegardes sur S3 ne contiennent pas d'informations sensibles ou confidentielles. Utilise des permissions S3 appropriées pour restreindre l'accès aux logs.
+
