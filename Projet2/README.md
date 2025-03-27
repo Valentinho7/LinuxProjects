@@ -28,7 +28,7 @@ JENKINS_HOME="/var/lib/jenkins"  # Remplace avec le chemin de ton répertoire Je
 S3_BUCKET="s3://ton-bucket-s3"  # Remplace avec ton nom de bucket S3
 ```
 
-💻 Utilisation
+## 💻 Utilisation
 Clone ce repository :
 
 ```bash
@@ -62,6 +62,6 @@ En cas d'échec, tu verras un message d'erreur :
 Failed to upload: job1/42
 ```
 
-⚠️ Sécurité
+## ⚠️ Sécurité
 Veille à ce que les logs Jenkins que tu sauvegardes sur S3 ne contiennent pas d'informations sensibles ou confidentielles. Utilise des permissions S3 appropriées pour restreindre l'accès aux logs.
 
