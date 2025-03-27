@@ -1,0 +1,46 @@
+# Ignorer les fichiers de configuration d'IDE
+.idea/
+.vscode/
+
+# Ignorer les fichiers de logs générés
+*.log
+
+# Ignorer les fichiers temporaires
+*.tmp
+*.swp
+*.bak
+
+# Ignorer les fichiers de compilation et les répertoires binaires
+node_modules/
+*.out
+*.class
+*.jar
+
+# Ignorer les fichiers de configuration AWS locaux (assurez-vous de ne pas pousser vos credentials dans un repo public)
+.aws/
+.aws/credentials
+
+# Ignorer les répertoires ou fichiers personnels
+*.env
+*.DS_Store
+
+# Ignorer les fichiers exécutables générés
+*.sh~
+
+# Ignorer les fichiers d'archive
+*.tar.gz
+*.zip
+
+# Ignorer les fichiers générés par le système d'exploitation
+Thumbs.db
+ehthumbs.db
+
+# Ignorer les fichiers Jenkins ou les backups Jenkins temporaires
+*.bak
+*.backup
+
+# Ignorer les répertoires de build Jenkins
+$JENKINS_HOME/jobs/*/builds/
+
+# Ignore les fichiers de dépendances locales de scripts ou de logs temporaires
+*.pid
